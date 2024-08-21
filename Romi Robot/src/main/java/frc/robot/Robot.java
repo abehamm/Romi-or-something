@@ -102,7 +102,7 @@ public class Robot extends TimedRobot {
     if (joystick.getRawButtonPressed(1)){ // checks to see if the A button has been pressed on the controller
       drive.resetDistances(); // if it was pressed, reset the encoders travled distance and set them to 0;
     }
-
+      // did this work???!??!?!?!? -------------------------------------
     drive.driveWheels(joystick.getRawAxis(1), joystick.getRawAxis(4), 0.25, 0.25); /*method we implemented that takes the value 
     of the joysticks we are driving with, to move both wheels, and then multiply the speed of the wheels by 0.25 to make them slower. */
   }

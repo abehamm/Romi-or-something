@@ -61,10 +61,10 @@ public class Drive {
    * 
    * this method alters the speed and turning variables if we wanted to change the rate of each param
    * 
-   * @param speed // speed we want the romi to drive at
-   * @param turn // offset that we want to add or subtract to one of the wheels to turn them
-   * @param speedMag // amplifies the rate of speed
-   * @param turnMag // amplifies the turning speed
+   * @param speed speed we want the romi to drive at
+   * @param turn offset that we want to add or subtract to one of the wheels to turn them
+   * @param speedMag amplifies the rate of speed
+   * @param turnMag amplifies the turning speed
    */
   public void driveWheels(double speed, double turn, double speedMag, double turnMag){
     left_motor.set(speed*speedMag + turn*turnMag);
